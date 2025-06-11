@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ma Boutique 3D</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f7f7f7; color: #222;}
+        header, footer { background: #20232a; color: #fff; padding: 1.5em 0 1em 0; text-align: center; position: relative;}
+        .header-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5em;
+            flex-wrap: wrap;
+        }
+        .header-cat {
+            width: 48px;
+            height: 48px;
+            object-fit: cover;
+            border-radius: 50%;
+            background: #fff8;
+            box-shadow: 0 2px 6px #3333;
+            border: 2px solid #fff4;
+        }
+        nav { margin: 1em 0 1.5em 0;}
+        nav a {
+            color: #2196f3;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        nav a:hover { text-decoration: underline;}
+        .container { max-width: 1000px; margin: 2em auto; padding: 0 1em;}
+        .grid { display: flex; flex-wrap: wrap; gap: 2em; justify-content: center;}
+        .card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 16px #ccc6;
+            width: 260px;
+            padding: 1.5em 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform .2s;
+        }
+        .card:hover { transform: scale(1.025);}
+        .card img { width: 120px; height: 120px; object-fit: cover; border-radius: 10px;}
+        .card h3 { margin: 1em 0 0.5em 0;}
+        .price { font-weight: bold; color: #2196f3; margin-bottom: 1em;}
+        button {
+            background: #2196f3;
+            color: #fff;
+            border: none;
+            padding: 0.7em 1.2em;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background .2s;
+        }
+        button:hover { background: #1765b3;}
+        @media (max-width: 600px) {
+            .header-content { flex-direction: column; gap: .5em;}
+            .grid { flex-direction: column; align-items: center;}
+            .card { width: 90%;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img class="header-cat" src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=facearea&w=96&h=96&q=80" alt="Chat mignon">
+            <div>
+                <h1 style="margin-bottom:0.2em;">Ma Boutique d'Objets 3D</h1>
+                <p style="margin:0;">Des créations uniques, imprimées en 3D en France</p>
+            </div>
+            <img class="header-cat" src="https://images.unsplash.com/photo-1518715308788-3005759c41b5?auto=format&fit=facearea&w=96&h=96&q=80" alt="Chat mignon 2">
+        </div>
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#">Boutique</a>
+            <a href="#">À propos</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Boutique</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=300&q=80" alt="Objet 3D – Porte-clés">
+                <h3>Porte-clés puzzle</h3>
+                <div class="price">6,90 €</div>
+                <p>Porte-clés coloré en forme de puzzle, imprimé en PLA biodégradable.</p>
+                <button>Commander</button>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=300&q=80" alt="Objet 3D – Pot à crayons">
+                <h3>Pot à crayons design</h3>
+                <div class="price">11,90 €</div>
+                <p>Pot à crayons géométrique. Disponible en plusieurs couleurs.</p>
+                <button>Commander</button>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&w=300&q=80" alt="Objet 3D – Figurine">
+                <h3>Figurine déco dragon</h3>
+                <div class="price">15,90 €</div>
+                <p>Mini dragon stylisé, parfait pour décorer un bureau ou une étagère.</p>
+                <button>Commander</button>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517511620798-cec17d428bc0?auto=format&fit=crop&w=300&q=80" alt="Objet 3D – Support téléphone">
+                <h3>Support téléphone</h3>
+                <div class="price">9,90 €</div>
+                <p>Support stable et pratique pour smartphone, personnalisable.</p>
+                <button>Commander</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Ma Boutique 3D &mdash; Créations imprimées en France
+    </footer>
+</body>
+</html>
